@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Sofycomps.com::Careers</title>
+        <title>Sofycomps.com::Portfolio</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -33,103 +33,75 @@
         <div class='site-body'>
 			<div class='site-branding'>
 			    <h1>Sofycomps India</h1>
-			  </div>      
-			        <div class="site-presentation">
-			        	<div class='site-nav-pannel'>
-			        		<ul>
-			        			<li class='home'><a href="index.html">Home</a></li>
-			        			<li class='portfolio'><a href="portfolio.html">Portfolio</a></li>
+			    <div class='site-nav-pannel clearfix'>
+			        		<ul class="sofycomps-navigation-menu">
+			        			<li class='home' onclick="javascript:location.href='index.html'">Home</li>
+			        			<li class='portfolio' onclick="javascript:location.href='portfolio.html'">Portfolio</li>
 			        		<!--	<li class='projects'>Projects</li> -->
 			        		<!--	<li class='clients'>Clients</li> -->
 			        		<!--	<li class='services'>Services</li> -->
-			        			<li class='about'><a href="about_us.html">About Us</a></li>
-			        			<li class='careers'><a href="careers.html">Careers</a></li>
-			        	    	<li> <form>
-			        	    	Search: <input type="text" size=10  name="search">
-			        	    	<input type="submit" value="GO">	</form>
-			        	    	</li>  
+			        			<li class='about' onclick="javascript:location.href='about_us.html'">About Us</li>
+			        		<li class='about' onclick="javascript:location.href='careers.html'">Careers</li>  
 			        	    </ul>
-			        	</div>	
-			        	<div class="slideshowContainer">
-						     <div class="slideshow">
-						         <img src="img/image1.jpeg"  alt="image1" class="prv"/>
-						         <img src="img/image2.jpg"  alt="image2" class="active"/>
-						       	 <img src="img/image3.jpg"  alt="image3" class="nxt"/>
-						        <!--   <img src="img/image4.jpg"  alt="image4" width="600" height="300" /> -->
-						     </div>
-							 <ul id="nav">
-						         <li id="prev"><a href="#">Previous</a></li>
-						         <li id="next"><a href="#">Next</a></li>
-						     </ul>    
-						</div>
-						 
-			        </div>
-				<div class='site-content'>
-					
-				
-				<div class='site-content-body'>
-						
-						<ul class='clearfix'>
-							<li>
-								<h3>Part I</h3>
-								<div class='part-body'>
-									<p>Content goes here..</p>
+			        	    
+			        	    <ul class="sofycomps-search">
+			        	    	<li>
+									<form>
+			        	    			Search: <input type="text" size=10  name="search">
+			        	    			<input type="submit" value="GO" name="">
+									</form>
+			        	    	</li>			        	    
+			        	    </ul>	
+			        	</div>
+			</div>      
+				<div class='site-content' id="sofycomps-careers">
+						<div class='site-content-body'>
+						<h2>Lorem ipsum dolor sit amet</h2>
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra neque dolor, vitae bibendum arcu sollicitudin nec. Nam consequat at est a cursus. Mauris posuere mi ante, eu ultricies urna gravida id. Donec vel aliquet lectus. Vestibulum quis bibendum ipsum. Aenean varius eu elit id ultricies. Mauris lacinia leo lacus, sit amet malesuada ligula commodo in.
+
+</p>
+ 						<div class="content-element-parent clearfix">
+							<form action="" method="post" name="careers">
+								<div class="content-form-row">
+									<lable for="name">Name: </lable>
+									<input type="text" name="name" class="name" id="name"/>
 								</div>
-							</li>
-							<li>
-								<h3>Part II</h3>
-								<div class='part-body'>
-									<p>Content goes here..</p>
+								<div class="content-form-row">
+									<lable for="contact">Contact No.: </lable>
+									<input type="text" name="contact" class="contact" id="contact"/>
 								</div>
-							</li>
-							<li>
-								<h3>Part III</h3>
-								<div class='part-body'>
-									<p>Content goes here..</p>
+								<div class="content-form-row">
+									<lable for="description">Description (in short): </lable>
+									<textarea name="description" class="description" id="description"></textarea>
 								</div>
-							</li>
-							<li>
-								<h3>Part IV</h3>
-								<div class='part-body'>
-									<p>Content goes here..</p>
+								<div class="content-form-row">
+									<lable for="resume">Resume: </lable>
+									<input type="file" name="resume" class="resume" id="resume"/>
 								</div>
-							</li>
-							<li>
-								<h3>Part V</h3>
-								<div class='part-body'>
-									<p>Content goes here..</p>
+								
+								<div class="content-form-row form-content-submit-row">
+									<button id="formsubmit" class="formsubmit" name="formsumbit">Upload</button>
 								</div>
-							</li>
-																																			
-							<li>
-								<h3>Part VI</h3>
-								<div class='part-body'>
-									<p>Content goes here..</p>
-								</div>
-							</li>
-							<li>
-								<h3>Part VII</h3>
-								<div class='part-body'>
-									<p>Content goes here..</p>
-								</div>
-							</li>
-							<li>
-								<h3>Part VII</h3>
-								<div class='part-body'>
-									<p>Content goes here..</p>
-								</div>
-							</li>
-						</ul>
-						
-						
+							</form>
+ 						</div> 
 					</div>
-					
 				</div>
 
  			</div>
-        </div>
-         	
- 
-     
+          <div class="footer">
+        	<div class="footer-parent-body">
+        		<ul class="footer-menu-list">
+        			<li onclick="javascript:location.href='policies/technologis.html'">Technologies</li>
+        			<li onclick="javascript:location.href='policies/licences.html'">Our licences</li>
+        			<li onclick="javascript:location.href='news_events.html'">News and events</li>
+        			<!--<li><a href="#">About clients</a></li> -->
+        			<li onclick="javascript:location.href='policies/terms.html'">Terms</li>
+        			<li onclick="javascript:location.href='policies/privacy.html'">Privacy</li> 
+        		</ul>
+        		
+        		    <p>Copyright: '&#169'Sofycomps India. All rights reserverd.</p>
+        	</div>
+ 		</div>
+
     </body>
 </html>

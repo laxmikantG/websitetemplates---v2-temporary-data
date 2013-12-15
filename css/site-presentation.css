@@ -16,9 +16,8 @@ body {
 		
 }
 .site-branding {
-    background-color: darkviolet;
-    border-bottom: 2px solid white;
-    box-shadow: 2px 2px 2px gray	
+    background: -moz-linear-gradient(center top , rgb(169, 3, 41) 0%, rgb(143, 2, 34) 44%, rgb(109, 0, 25) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-bottom: 5px solid rgb(169, 3, 41);
 }
 h1 {
     background: url("images/logo.png") no-repeat scroll 0 0 transparent;
@@ -36,29 +35,41 @@ h1 {
 	clear: both;
 	position: relative;
 }
-.site-nav-pannel ul {
-    height: 45px;
+
+.site-nav-pannel ul.sofycomps-navigation-menu {
+    height: 40px;
     margin: 0 auto;
-    padding: 10px;
     position: relative;
     text-align: center;
-    width: 950px;
+    float: left;
 }
-.site-nav-pannel ul li{
-    color: cornsilk;
+ ul.sofycomps-navigation-menu li {
+    border-bottom: 5px solid rgba(0, 0, 0, 0);
+    color: rgb(255, 248, 220);
+    cursor: pointer;
     display: inline-block;
     float: left;
     font-size: 16px;
     font-weight: normal;
-    padding: 11px 45px;
-    width: auto;
-    cursor: pointer;
+    line-height: 40px;
+    min-width: 100px;
+}
+ ul.sofycomps-navigation-menu li:hover {
+    background-color: rgba(143, 2, 34,.5);
+    border-bottom: 5px solid rgb(222, 184, 135);
+    border-radius: 5px 5px 0px 0px;
 }
 
-.site-nav-pannel ul li:hover{
-	background-color: rgba(97,196, 25, .3);	
-	
+
+
+.sofycomps-search {
+    background-color: rgba(143, 2, 34, 0.5);
+    border-radius: 5px 5px 0 0;
+    color: rgb(255, 255, 255);
+    float: right;
+    padding: 6px 10px;
 }
+.sofycomps-search ul{}
 
 .slideshowContainer {
     width: 632px;
@@ -139,21 +150,28 @@ h1 {
 	
 }
 
+.site-nav-pannel,.site-content-body {
+    margin: 0px auto;
+    max-width: 950px;
+}
+
 .site-content-body{
     margin: 20px auto;
-    position: relative;
-    width: 950px	
+    position: relative;	
 }
-.site-content-body ul{}
 
-.site-content-body ul li {
-    float: left;
-    margin: 10px 15px;
-    max-height: 200px;
-    max-width: 435px;
-    overflow: hidden;
+.site-content-body p {
+    color: rgb(60, 60, 60);
+    font-family: inherit;
+    font-size: 12px;
+    margin: 5px 0;
 }
-.site-content-body ul li h3{
+
+.site-content-body h2{
+	border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+#sofycomps-home h3{
     border-bottom: 1px solid rgba(250, 70, 110, 0.5);
     color: rgb(220, 20, 60);
     font-family: sans-serif;
@@ -161,19 +179,101 @@ h1 {
     line-height: 2em;
 }
 
-.site-content-body ul li p {
-    color: rgb(60, 60, 60);
-    font-family: verdana;
-    font-size: 12px;
-    margin: 5px 0;
+#sofycomps-home ul li{
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    max-height: 200px;
+    max-width: 435px;
+    overflow: hidden;
+    padding-bottom: 15px;
 }
 
-.site-content-body ul li a {
+#sofycomps-home ul li a {
     color: rgb(0, 0, 255);
     float: right;
     font-size: 12px;
     text-decoration: none;
 }
+
+
+#sofycomps-portfolio .site-content-body {
+    padding-bottom: 20px;
+    padding-top: 35px;
+}
+
+/* For Reaserch and Devlopment page ============================ */
+
+.content-element-list {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.content-element-list > li {
+    border-bottom: 1px solid rgba(210, 210, 210, 0.7);
+    padding: 15px 5px;
+    vertical-align: middle;
+}
+.content-element-list li img {
+    float: left;
+}
+
+.content-element-list > li h3 {
+    color: rgb(220, 20, 60);
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.content-element-list > li:nth-child(2n) img {
+    float: right;
+}
+
+
+.content-element-list > li:nth-child(2n) h3, .content-element-list > li:nth-child(2n) p {
+    margin-left: 0;
+    margin-right: 220px;
+}
+.content-element-list > li h3, .content-element-list > li p {
+    margin-left: 220px;
+    text-align: justify;
+}
+
+
+/* For Careers page ============================ */
+
+.content-element-parent form {
+    margin: 10px 0px;
+    position: relative;
+    width: 500px;
+}
+
+.content-form-row {
+    display: inline-block;
+    font-size: 13px;
+    padding: 5px 0;
+    width: 100%;
+}
+.content-form-row lable {
+    float: left;
+    width: 130px;
+}
+
+.content-element-parent input, .content-element-parent textarea {
+    border: 1px solid rgb(180, 180, 180);
+    padding: 5px;
+    width: 60%;
+    
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    
+}
+
+.content-form-row.form-content-submit-row {
+    text-align: center;
+}
+
+/* For page footer  ============================ */
 
 .footer-parent-body {
     font-size: 13px;
